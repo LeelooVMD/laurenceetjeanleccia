@@ -12,10 +12,10 @@
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
           <li class="nav-item active">
-            <%= link_to "Acceuil", "#", class: "nav-link" %>
+            <%= link_to "Acceuil", "/", class: "nav-link" %>
           </li>
           <li class="nav-item active">
-            <%= link_to "Actualités", "#", class: "nav-link" %>
+            <%= link_to "Actualités", articles_path, class: "nav-link" %>
           </li>
           <li class="nav-item active">
             <%= link_to "Laurence Leccia", "#", class: "nav-link" %>
@@ -39,10 +39,10 @@
           </li>
         <% else %>
           <li class="nav-item active">
-            <%= link_to "Acceuil", "#", class: "nav-link" %>
+            <%= link_to "Acceuil", "/", class: "nav-link" %>
           </li>
           <li class="nav-item active">
-            <%= link_to "Actualités", "#", class: "nav-link" %>
+            <%= link_to "Actualités", articles_path, class: "nav-link" %>
           </li>
           <li class="nav-item active">
             <%= link_to "Laurence Leccia", "#", class: "nav-link" %>

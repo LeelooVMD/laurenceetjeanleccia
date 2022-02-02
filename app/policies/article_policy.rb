@@ -5,21 +5,23 @@ class ArticlePolicy < ApplicationPolicy
     end
   end
 
+  def index?
+    true
+  end
+
+  def show?
+    true
+  end
+
   def create?
-    if user_signed_in?
-      return true
-    end
+    record.user == user
   end
 
   def update?
-    if user_signed_in?
-      return true
-    end
+    record.user == user
   end
 
   def delete?
-    if user_signed_in?
-      return true
-    end
+    record.user == user
   end
 end

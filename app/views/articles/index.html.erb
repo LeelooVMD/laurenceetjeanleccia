@@ -1,0 +1,14 @@
+<h1>Actualités</h1>
+
+<% @articles.each do |article| %>
+  <%= article.title %>
+  <% if policy(article).create? %>
+    <%= link_to 'new', new_article_path %>
+  <% end %>
+  <% if policy(article).update? %>
+    <%= link_to 'Edit', edit_article_path %>
+  <% end %>
+  <% if policy(article).delete? %>
+    <%= link_to 'delete', article_path, method: :delete, data: { confirm: 'Es-tu sure?' } %>
+  <% end %>
+<% end %>

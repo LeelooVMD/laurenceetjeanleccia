@@ -1,10 +1,13 @@
 class ArticlesController < ApplicationController
+  skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
+    authorize @article
     @articles = Article.all
   end
 
   def show
+    authorize @article
     @article = Article.find(params[:id])
   end
 
@@ -13,7 +16,10 @@ class ArticlesController < ApplicationController
   end
 
   def create
+    # authorize @article
     @article = Article.new(article_params)
+    @article.user = current_user
+
     if @article.save
       redirect_to article_path(@article)
     else
@@ -26,6 +32,7 @@ class ArticlesController < ApplicationController
   end
 
   def update
+    authorize @article
     @article = Article.find(:params[:id])
     if @article.update(article_params)
       redirect_to article_path(@article)
@@ -35,6 +42,7 @@ class ArticlesController < ApplicationController
   end
 
   def destroy
+    authorize @article
     @article = Article.find(:params[:id])
     @article.destroy
     redirect_to articles_path
