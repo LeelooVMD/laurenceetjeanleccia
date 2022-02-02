@@ -14,14 +14,14 @@ class ArticlePolicy < ApplicationPolicy
   end
 
   def create?
-    record.user == user
+    record.user == user || user.admin
   end
 
   def update?
-    record.user == user
+    record.user == user || user.admin
   end
 
   def delete?
-    record.user == user
+    record.user == user || user.admin
   end
 end

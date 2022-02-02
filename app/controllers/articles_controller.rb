@@ -1,14 +1,13 @@
 class ArticlesController < ApplicationController
+  before_action :set_articles, only: [:show, :edit, :update, :destroy]
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
-    authorize @article
-    @articles = Article.all
+    @articles = policy_scope(Article)
   end
 
   def show
     authorize @article
-    @article = Article.find(params[:id])
   end
 
   def new
@@ -16,7 +15,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    # authorize @article
+    authorize @article
     @article = Article.new(article_params)
     @article.user = current_user
 
@@ -28,12 +27,10 @@ class ArticlesController < ApplicationController
   end
 
   def edit
-    @article = Article.find(:params[:id])
   end
 
   def update
     authorize @article
-    @article = Article.find(:params[:id])
     if @article.update(article_params)
       redirect_to article_path(@article)
     else
@@ -43,7 +40,6 @@ class ArticlesController < ApplicationController
 
   def destroy
     authorize @article
-    @article = Article.find(:params[:id])
     @article.destroy
     redirect_to articles_path
   end
@@ -52,5 +48,9 @@ class ArticlesController < ApplicationController
 
   def article_params
     params.require(:article).permit(:title, :picture, :content)
+  end
+
+  def set_articles
+    @article = Article.find(params[:id])
   end
 end
