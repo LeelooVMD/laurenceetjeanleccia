@@ -11,47 +11,12 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
+          <%= render 'shared/dropdown' %>
           <li class="nav-item active">
-            <%= link_to "Acceuil", "/", class: "nav-link" %>
-          </li>
-          <li class="nav-item active">
-            <%= link_to "Actualités", articles_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item active">
-            <%= link_to "Laurence Leccia", "#", class: "nav-link" %>
-          </li>
-          <li class="nav-item active">
-            <%= link_to "Jean Leccia", "#", class: "nav-link" %>
-          </li>
-          <li class="nav-item active">
-            <%= link_to "Contact et adresse", "#", class: "nav-link" %>
-          </li>
-          <li class="nav-item dropdown">
-            <% if current_user.email === 'lauleccia@gmail.com' %>
-              <strong class="avatar dropdown-toggle", id="navbarDropdown", data-bs-toggle="dropdown", aria-haspopup= true, aria-expanded= false>Laurence Leccia</strong>
-            <% else %>
-              <strong class="avatar dropdown-toggle", id="navbarDropdown", data-bs-toggle="dropdown", aria-haspopup= true, aria-expanded= false>Lilas Marchand</strong>
-            <% end %>
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-            </div>
+              <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" %>
           </li>
         <% else %>
-          <li class="nav-item active">
-            <%= link_to "Acceuil", "/", class: "nav-link" %>
-          </li>
-          <li class="nav-item active">
-            <%= link_to "Actualités", articles_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item active">
-            <%= link_to "Laurence Leccia", "#", class: "nav-link" %>
-          </li>
-          <li class="nav-item active">
-            <%= link_to "Jean Leccia", "#", class: "nav-link" %>
-          </li>
-          <li class="nav-item active">
-            <%= link_to "Contact et adresse", "#", class: "nav-link" %>
-          </li>
+          <%= render 'shared/dropdown' %>
         <% end %>
       </ul>
     </div>
