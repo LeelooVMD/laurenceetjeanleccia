@@ -1,14 +1,21 @@
-<h1>Actualités</h1>
+<div class="container">
+  <h1>Actualités</h1>
 
-<% @articles.each do |article| %>
-  <%= article.title %>
-  <% if policy(article).create? %>
-    <%= link_to 'new', new_article_path %>
+  <% @articles.each do |article| %>
+    <div class='article-card'>
+      <%= image_tag article.picture %>
+      <div class="card-infos">
+        <p><%= article.title %></p>
+      </div>
+    </div>
+    <%# if policy(@articles).create? %>
+      <%#=link_to 'new', new_article_path %>
+    <%# end %>
+    <%# if policy(@articles).update? %>
+      <%#= link_to 'Edit', edit_article_path %>
+    <%# end %>
+    <%# if policy(@articles).delete? %>
+      <%#= link_to 'delete', article_path, method: :delete, data: { confirm: 'Es-tu sure?' } %>
+    <%# end %>
   <% end %>
-  <% if policy(article).update? %>
-    <%= link_to 'Edit', edit_article_path %>
-  <% end %>
-  <% if policy(article).delete? %>
-    <%= link_to 'delete', article_path, method: :delete, data: { confirm: 'Es-tu sure?' } %>
-  <% end %>
-<% end %>
+</div>

@@ -1,0 +1,17 @@
+.article-card {
+  background-color: white;
+  width: 220px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: none;
+  }
+  .card-infos {
+    p {
+      margin: 15px;
+      padding: 10px;
+    }
+  }
+}
