@@ -1,5 +1,4 @@
 .navbar-lewagon {
-  overflow: hidden;
   justify-content: space-between;
   background: #2003b1;
 }
@@ -17,6 +16,9 @@
 .active {
   a {
     color: white !important;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -26,6 +28,19 @@
   a {
     text-decoration: none;
     color: white;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .dropdown-menu {
+    background: #2003b1;
+    .dropdown-item {
+      &:hover {
+        text-decoration: underline !important;
+        text-underline-position: under;
+        background: #2003b1;
+      }
+    }
   }
 }
 
