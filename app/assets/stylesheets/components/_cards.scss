@@ -60,8 +60,15 @@ $lg: new-breakpoint(min-width 1024px);
 // 	height: 100vh;
 // 	// background-color:darken($color-1, 4%);
 // }
+.grid {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
 
 figure {
+  margin-top: 20px;
 	position: relative;
 	display: flex;
 	align-items: center;

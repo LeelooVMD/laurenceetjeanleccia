@@ -1,20 +1,20 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= randomized_background_image %>);">
+</div>
 <div class="container">
-  <h1>Actualités</h1>
+  <div class="grid">
+    <% @articles.each do |article| %>
+      <figure class="image-block">
+        <%= image_tag article.picture %>
+        <figcaption>
+          <p><%= article.title %></p>
+          <p>Voir plus <i class="fa-solid fa-arrow-down"></i></p>
+          <p><%= article.content %></p>
+        </figcaption>
+      </figure>
+    <% end %>
+  </div>
+</div>
 
-  <% @articles.each do |article| %>
-        <%#= link_to '#', data: { bs_toggle:'modal', bs_target:'#exampleModal'} do %>
-          <figure class="image-block">
-            <%= image_tag article.picture %>
-            <%# <div class="card-infos"> %>
-            <figcaption>
-              <p><%= article.title %></p>
-              <p>Voir plus <i class="fa-solid fa-arrow-down"></i></p>
-              <p><%= article.content %></p>
-            </figcaption>
-          </figure>
-          <%# </div> %>
-        <%# end %>
-        <%#= render 'shared/modal' %>
     <%# if policy(@articles).create? %>
       <%#=link_to 'new', new_article_path %>
     <%# end %>
@@ -24,5 +24,3 @@
     <%# if policy(@articles).delete? %>
       <%#= link_to 'delete', article_path, method: :delete, data: { confirm: 'Es-tu sure?' } %>
     <%# end %>
-  <% end %>
-</div>
