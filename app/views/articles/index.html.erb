@@ -7,8 +7,9 @@
         <%= image_tag article.picture %>
         <figcaption>
           <p><%= article.title %></p>
-          <p>Voir plus <i class="fa-solid fa-arrow-down"></i></p>
-          <p><%= article.content %></p>
+          <div class='content'>
+            <p><%= article.content %></p>
+          </div>
         </figcaption>
       </figure>
     <% end %>
