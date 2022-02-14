@@ -5,5 +5,6 @@ class PagesController < ApplicationController
   end
 
   def laurenceleccia
+    @texts = Text.all
   end
 end
