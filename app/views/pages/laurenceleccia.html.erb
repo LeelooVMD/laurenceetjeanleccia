@@ -10,14 +10,16 @@
       <h3>Biographie</h3>
       <%= render 'shared/cv' %>
     </div>
-    <div class="text-grid">
+    <div class="texts">
       <h3>Textes</h3>
-      <% @texts.each do |text| %>
-        <div class="text-card">
-          <h4><strong><%= text.title %></strong></h4>
-          <p><%= text.content %></p>
-        </div>
-      <% end %>
+      <div class="text-grid">
+        <% @texts.each do |text| %>
+          <div class="text-card">
+            <h4><strong><%= text.title %></strong></h4>
+            <p><%= text.content %></p>
+          </div>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>
