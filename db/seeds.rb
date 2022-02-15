@@ -48,6 +48,7 @@ Dans mon travail, je mets tout en place pour favoriser la surprise, les aléas. 
 Quoi de plus ennuyeux que de savoir d’avance ce qui va arriver !
 
 J’aime ce danger de pouvoir échouer, tout perdre ou … cette grâce de voir tout se construire avec une partie de moi-même que je n’utilise que là, dans l’instant avec la peinture sur la toile …')
+
 Text.create(title: 'Marcel Leccia – 2014', content: 'L’œil se promène d’une toile à l’autre avec une application un peu nerveuse parce que la séduction agace. Qu’est-ce qui fait que « ça marche » ?
 
  Panneaux de formats très variables (300 x 300 cm , 40×40 cm), presque toujours carrés :  artichauts, bulbes, racines ; et fleurs, surtout des fleurs. Nous nous en tiendrons à celles-ci, mais on ferait des observations équivalentes pour tout autre « motif ».  Une, deux ou le plus souvent quatre fleurs. Si elles sont deux ou quatre, on les trouve disposées dans des carrés égaux. Volontiers rouges ou jaunes. Des dizaines et des dizaines de fleurs ; et pourtant, impossible d’ironiser sur la répétition : elles sont là et bien là, mais vont bientôt laisser la place à la peinture.

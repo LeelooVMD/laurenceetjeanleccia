@@ -7,10 +7,8 @@
 </div>
 <div class="container">
   <%# <div class="d-flex"> %>
-    <div class="cv">
-      <h3>Biographie</h3>
-      <%= render 'shared/cv' %>
-    </div>
+  <div class="texts">
+    <h3>Textes</h3>
     <section id="wrapper">
       <div class="content">
         <!-- Tab links -->
@@ -23,7 +21,7 @@
         <!-- Tab content -->
         <div class="wrapper_tabcontent">
           <% @texts.each do |text| %>
-            <div id="<%= text.title %>" class="tabcontent active">
+            <div id="<%= text.title %>" class="tabcontent">
               <h3><%= text.title %></h3>
               <p><%= text.content %></p>
             </div>
@@ -31,5 +29,10 @@
         </div>
       </div>
     </section>
+  </div>
+    <div class="cv">
+      <h3>Biographie</h3>
+      <%= render 'shared/cv' %>
+    </div>
   <%# </div> %>
 </div>
