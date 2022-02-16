@@ -19,11 +19,7 @@ $m02: #764ba2; /* main 2*/
 $n01: #f5f7fa; /* neutral 1*/
 $n02: #c3cfe2; /* neutral 2*/
 
-// body {
-//    background-color: #2e2e2e;
-//    font-family: "IBM Plex Sans", sans-serif;
-//    margin:0;
-// }
+
 
 #wrapper {
    display: flex;
@@ -35,7 +31,7 @@ $n02: #c3cfe2; /* neutral 2*/
 .content {
    max-width: 1200px;
    width: 100%;
-   min-width: 800px;
+   min-width: 1000px;
    margin: 0 5%;
    margin-top: 10%;
    transition: 0.3s ease;
