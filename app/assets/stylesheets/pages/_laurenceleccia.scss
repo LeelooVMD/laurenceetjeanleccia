@@ -1,15 +1,3 @@
-.cv {
-  margin: 15px;
-}
-
-h3 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-
-// _______________________________
-
 
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i");
 
@@ -18,6 +6,68 @@ $m01: #667eea; /* main 1*/
 $m02: #764ba2; /* main 2*/
 $n01: #f5f7fa; /* neutral 1*/
 $n02: #c3cfe2; /* neutral 2*/
+
+.cv {
+  margin: 5%;
+}
+
+h3 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+// .border-wrap {
+//   background-color: white;
+//   margin-top: 0px;
+//   z-index: -3;
+//   position: relative;
+//   opacity: 1;
+//   padding: 40px 60px;
+//   overflow: hidden;
+//   transition: all 1s ease;
+//   top: 0;
+//   &:before {
+//     content: "";
+//     height: 5px;
+//     width: 100%;
+//     position: absolute;
+//     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+//     z-index: -2;
+//     transition: all 1s ease;
+//   }
+//   &:after {
+//     content: "";
+//     height: 5px;
+//     width: 100%;
+//     position: absolute;
+//     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+//     z-index: -2;
+//     transition: all 1s ease;
+//   }
+// }
+
+// .border-wrap h3 {
+//    font-size: 40px;
+//    top: 75px;
+//    transform: rotate(90deg);
+//    position: absolute;
+//    left: -90px;
+//    opacity: 0.1;
+//    width: 200px;
+//    height: 60px;
+//    background: -webkit-linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+//    -webkit-background-clip: text;
+//    -webkit-text-fill-color: transparent;
+//    padding: 0;
+//    animation: city 1s ease;
+
+//    @media screen and (max-width: 512px) {
+//       top: 65px;
+//    }
+// }
+
+// _______________________________
+
 
 
 
@@ -32,8 +82,7 @@ $n02: #c3cfe2; /* neutral 2*/
    max-width: 1200px;
    width: 100%;
    min-width: 1000px;
-   margin: 0 5%;
-   margin-top: 10%;
+   margin: 5%;
    transition: 0.3s ease;
 
    @media screen and (max-width: 512px) {
@@ -48,7 +97,7 @@ $n02: #c3cfe2; /* neutral 2*/
    margin: 0;
    background-image: linear-gradient(135deg, $n01 0%, $n02 100%);
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
    align-items: center;
    height: 80px;
    border-radius: 2px 2px 0px 0px;
