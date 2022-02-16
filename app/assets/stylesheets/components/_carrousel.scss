@@ -1,0 +1,13 @@
+.carrousel {
+  .fas {
+    font-size: 40px;
+    margin: 0 20px;
+  }
+  img {
+    max-height: 300px;
+  }
+  .pictures1 {
+    display: flex;
+    overflow: hidden;
+  }
+}

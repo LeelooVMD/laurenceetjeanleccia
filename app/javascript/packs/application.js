@@ -8,7 +8,7 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 require("about_tables")
-require("carrouel")
+// require("carrousel")
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
