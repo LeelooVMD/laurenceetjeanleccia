@@ -19,7 +19,7 @@ Article.create(title: 'Exposition "Entre les chalets" à Gruissan', picture: 'gr
 Article.create(title: 'Exposition Laurence LECCIA à Montpellier', picture: 'montpellier-exposition.jpeg', content: 'Exposition en 1995 à Les Passagers de l\'art au 3 Rue Nozeran.', user_id: 1)
 
 puts 'Creating texts'
-Text.create(title: 'Laurence Leccia  – 2015', content: "A l’École d’Architecture, j’ai été formée à un dessin classique : la perspective, la théorie de la couleur, l’ombre et lumière, les proportions dorées. J’ai appris le trait d’équerre, un dessin au cordeau, une vision orthogonale.
+Text.create(title: 'Laurence Leccia  – 2015', owner: 'Laurence', content: "A l’École d’Architecture, j’ai été formée à un dessin classique : la perspective, la théorie de la couleur, l’ombre et lumière, les proportions dorées. J’ai appris le trait d’équerre, un dessin au cordeau, une vision orthogonale.
  \r\n
  \r\n
  Avec l’École des Beaux Arts , je me suis tournée vers l’art contemporain. J’ai cherché à me départir de la rigidité académique. J’ai voulu le trait tremblé, les embus indépendants, tous les aléats, les champs colorés …
@@ -51,7 +51,7 @@ Quoi de plus ennuyeux que de savoir d’avance ce qui va arriver !
 \r\n
 J’aime ce danger de pouvoir échouer, tout perdre ou … cette grâce de voir tout se construire avec une partie de moi-même que je n’utilise que là, dans l’instant avec la peinture sur la toile …")
 
-Text.create(title: 'Marcel Leccia – 2014', content: "L’œil se promène d’une toile à l’autre avec une application un peu nerveuse parce que la séduction agace. Qu’est-ce qui fait que « ça marche » ?
+Text.create(title: 'Marcel Leccia – 2014', owner: 'Laurence', content: "L’œil se promène d’une toile à l’autre avec une application un peu nerveuse parce que la séduction agace. Qu’est-ce qui fait que « ça marche » ?
 \r\n
 Panneaux de formats très variables (300 x 300 cm , 40×40 cm), presque toujours carrés :  artichauts, bulbes, racines ; et fleurs, surtout des fleurs. Nous nous en tiendrons à celles-ci, mais on ferait des observations équivalentes pour tout autre « motif ».  Une, deux ou le plus souvent quatre fleurs. Si elles sont deux ou quatre, on les trouve disposées dans des carrés égaux. Volontiers rouges ou jaunes. Des dizaines et des dizaines de fleurs ; et pourtant, impossible d’ironiser sur la répétition : elles sont là et bien là, mais vont bientôt laisser la place à la peinture.
 \r\n
@@ -69,7 +69,7 @@ Et si l’on prend enfin un peu de son temps au plaisir, on s’aperçoit qu’o
 \r\n
 \r\n
 Apprendre à voir le monde et la peinture, en éprouver étonnement et plaisir ? On a bien affaire, en effet, à un peintre.")
-Text.create(title: 'Jean-Pierre Rose, historien d’art – 2014', content: "La Peinture serait donc morte, surtout la figurative ?
+Text.create(title: 'Jean-Pierre Rose, historien d’art – 2014', owner: 'Laurence', content: "La Peinture serait donc morte, surtout la figurative ?
 \r\n
 Peindre en plus des natures, mortes elles aussi ! Quel sous-genre !
 \r\n
@@ -82,7 +82,7 @@ Il ne s’agit pas de séries embaumées pour naturalistes, mais de célébratio
 \r\n
 \r\n
 Célébrant avec art, ce que dans notre folie nous pourrions, un jour, perdre.")
-Text.create(title: 'Laurence Leccia – Juillet 2007', content: "« Si à l’époque je me suis inscrite à l’Ecole des Beaux Arts ce n’est pas pour devenir une artiste mais pour devenir peintre. L’art officiel veut se débarrasser du sensible pour privilégier l’idée comme si cela s’opposait. Mon travail est à l’opposé, empirique, issu de l’expérience. Il est aussi une recherche de l’esthétique dans son sens premier qui en grec veut dire sentir.Je m’organise pour construire mon travail de proche en proche, quelques paramètres sont décidés par avance. Je veux juste donner de l’énergie.
+Text.create(title: 'Laurence Leccia – Juillet 2007', owner: 'Laurence', content: "« Si à l’époque je me suis inscrite à l’Ecole des Beaux Arts ce n’est pas pour devenir une artiste mais pour devenir peintre. L’art officiel veut se débarrasser du sensible pour privilégier l’idée comme si cela s’opposait. Mon travail est à l’opposé, empirique, issu de l’expérience. Il est aussi une recherche de l’esthétique dans son sens premier qui en grec veut dire sentir.Je m’organise pour construire mon travail de proche en proche, quelques paramètres sont décidés par avance. Je veux juste donner de l’énergie.
 \r\n
 La peinture ne se résume pas au sujet.
 \r\n
@@ -90,7 +90,7 @@ La peinture ne se résume pas au sujet.
 Le sujet « fleurs », sensuelles, érotiques pour les uns, décoratives, esthétisantes, séduisantes, pour les autres, ou encore chargé du féminin, de l’épanouissement, de narcissisme ou de la futilité sont pour moi juste un prétexte qui me permet d’explorer mon intention de prédilection : l’aléatoire, le fortuit, l’accident.
 \r\n
 Avec ce sujet bavard, chacun pose son histoire sur le miroir de la toile, comme une crème de beauté, chacun prend soin de soi avec l’énergie de la peinture. Mais ce qui m’attire, c’est ce que ce sujet me permet : rendre compte de l’informel, oublier la représentation pour être au plus près de la surprise, du plaisir comme on déballe un cadeau.")
-Text.create(title: 'Jean-Pierre Rose, historien d’art – Juillet 2007', content: "« Trop féminin ? Il y aurait donc une peintre masculine et une peintre féminine ?
+Text.create(title: 'Jean-Pierre Rose, historien d’art – Juillet 2007', owner: 'Laurence', content: "« Trop féminin ? Il y aurait donc une peintre masculine et une peintre féminine ?
 \r\n
 Et qui plus est de fleurs ! Renvoyons d’abord dos à dos machos intégristes et féministes endiablées.
 \r\n
