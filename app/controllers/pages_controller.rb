@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :laurenceleccia ]
+  skip_before_action :authenticate_user!, only: [ :home, :laurenceleccia, :laurence_lestoiles ]
 
   def home
   end
@@ -7,4 +7,8 @@ class PagesController < ApplicationController
   def laurenceleccia
     @texts = Text.all
   end
+
+  def laurence_lestoiles
+  end
+
 end
