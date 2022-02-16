@@ -1,10 +1,10 @@
 //------ Tableau 1 avec textes -------
-
 const tabLinks = document.querySelectorAll(".tablinks");
 const tabContent = document.querySelectorAll(".tabcontent");
-tabLinks[0].classList.add('active');
-tabContent[0].classList.add('active');
-
+window.onload = function atConnection() {
+  tabLinks[0].classList.add('active');
+  tabContent[0].classList.add('active');
+};
 
 tabLinks.forEach(function (el) {
   el.addEventListener("click", openTabs);
