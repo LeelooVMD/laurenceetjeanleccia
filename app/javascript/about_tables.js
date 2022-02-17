@@ -1,10 +1,13 @@
+const aPropos = document.getElementById('Apropos')
+// aPropos.addEventListener('click', something())
+
 //------ Tableau 1 avec textes -------
+// window.location.reload(true)
 const tabLinks = document.querySelectorAll(".tablinks");
 const tabContent = document.querySelectorAll(".tabcontent");
-window.onload = function atConnection() {
-  tabLinks[0].classList.add('active');
-  tabContent[0].classList.add('active');
-};
+tabLinks[0].classList.add('active');
+tabContent[0].classList.add('active');
+
 
 tabLinks.forEach(function (el) {
   el.addEventListener("click", openTabs);
