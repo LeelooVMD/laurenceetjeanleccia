@@ -1,13 +1,25 @@
 .carrousel {
+  transition: opacity 2s ease-in;
   .fas {
     font-size: 40px;
     margin: 0 20px;
   }
   img {
     max-height: 300px;
+    border-radius: 5px;
   }
   .pictures1 {
     display: flex;
     overflow: hidden;
+  }
+  .pictures2 {
+    display: flex;
+    overflow: hidden;
+  }
+  .contain-carrousel {
+    min-width: 1200px;
+    box-shadow: 0 0 20px rgba(black,0.4);
+    border-radius: 5px;
+
   }
 }

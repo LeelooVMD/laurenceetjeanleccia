@@ -3,20 +3,22 @@
 <div class="container">
   <h3>LES TOILES 2016-2017</h3>
   <div class="carrousel d-flex align-items-center" data-controller='slide'>
-    <i class="fas fa-solid fa-angle-left" data-slide-action='changepicture#click'></i>
-    <div class="pictures1" data-target='picslides'>
-      <%= image_tag 'IMG_4071.jpeg' %>
-      <%= image_tag 'IMG_4074.jpeg' %>
-      <%= image_tag 'IMG_4046 - crop.jpeg' %>
-      <%= image_tag 'IMG_4021 2 - crop.jpeg' %>
+    <i class="fas fa-solid fa-angle-left" data-action='click->slide#changeleft'></i>
+    <div class="contain-carrousel">
+      <div class="pictures1" data-slide-target='left'>
+        <%= image_tag 'IMG_4071.jpeg' %>
+        <%= image_tag 'IMG_4074.jpeg' %>
+        <%= image_tag 'IMG_4046 - crop.jpeg' %>
+        <%= image_tag 'IMG_4021 2 - crop.jpeg' %>
+      </div>
+      <div class="pictures2 d-none" data-slide-target='right'>
+        <%= image_tag 'expo-montpellier.jpeg' %>
+        <%= image_tag 'gruissan-exposition.jpeg' %>
+        <%= image_tag 'montpellier-exposition.jpeg' %>
+        <%= image_tag 'IMG_4021 2 - crop.jpeg' %>
+      </div>
     </div>
-    <div class="pictures2 d-none" data-target='picslides'>
-      <%= image_tag 'IMG_4071.jpeg' %>
-      <%= image_tag 'IMG_4074.jpeg' %>
-      <%= image_tag 'IMG_4046 - crop.jpeg' %>
-      <%= image_tag 'IMG_4021 2 - crop.jpeg' %>
-    </div>
-    <i class="fas fa-solid fa-angle-right"></i>
+    <i class="fas fa-solid fa-angle-right" data-action='click->slide#changeright'></i>
   </div>
   <h3>LES TOILES 2010-2015</h3>
   <h3>LES TOILES 2016-2017</h3>
