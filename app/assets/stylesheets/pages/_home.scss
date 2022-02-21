@@ -11,5 +11,28 @@ footer {
 }
 
 .home {
+  position: relative;
   margin-top: 86px;
+  .img {
+    margin-top: 86px;
+    position: absolute;
+    img {
+      width: 900px;
+      margin-left: 12px;
+    }
+  }
+}
+
+.presentation {
+  display: flex;
+  justify-content: end;
+  margin-right: 12px;
+  color: white;
+  font-family: 'Cantarell', sans-serif;
+  h1 {
+    font-family: 'Cantarell', sans-serif;
+  }
+  &.title {
+    z-index: 1;
+  }
 }
