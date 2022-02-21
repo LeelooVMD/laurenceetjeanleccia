@@ -11,4 +11,8 @@ class PagesController < ApplicationController
   def laurence_lestoiles
   end
 
+  def jeanleccia
+    @texts = Text.all
+  end
+
 end
