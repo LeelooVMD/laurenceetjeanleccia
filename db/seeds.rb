@@ -18,7 +18,7 @@ Article.create(title: 'Exposition Laurence LECCIA à Sète', picture: 'sete-invi
 Article.create(title: 'Exposition "Entre les chalets" à Gruissan', picture: 'gruissan-exposition.jpeg', content: 'Exposition de Laurence Leccia en 2016 à Gruissan Plage.', user_id: 1)
 Article.create(title: 'Exposition Laurence LECCIA à Montpellier', picture: 'montpellier-exposition.jpeg', content: 'Exposition en 1995 à Les Passagers de l\'art au 3 Rue Nozeran.', user_id: 1)
 
-puts 'Creating texts'
+puts 'Creating Laurence texts'
 Text.create(title: 'Laurence Leccia  – 2015', owner: 'Laurence', content: "A l’École d’Architecture, j’ai été formée à un dessin classique : la perspective, la théorie de la couleur, l’ombre et lumière, les proportions dorées. J’ai appris le trait d’équerre, un dessin au cordeau, une vision orthogonale.
  \r\n
  \r\n
@@ -100,3 +100,45 @@ Pour ce qui est des fleurs serons nous aussi sectaires que l’Académie qui vit
 Il vous faut du plus membré allez donc faire un tour chez Georgia O’Keefe et ses yuccas ou vers les jaillissements de Louise Bourgeois. Alors la paix ! Et regardons !Allier une vérité dans la fragilité d’un pavot tremblant a l’allusion de la tige envoyée dans une touche voilà l’art de Laurence.
 \r\n
 Composer de grandes machines dans des cadrages raffinés cousus envers-endroit et somptueux. Savoir traduire les tentations de l’aquarelle dans les glissements de « couloured-fields » est aussi une belle prouesse.Bref quand le retour à la nature est de cet ordre là, je souscris et vous invite ! Tous à la Chapelle ! »")
+
+# ------ Jean Leccia ------
+
+puts 'creating Jean texts'
+Text.create(title: 'Jean LECCIA, 2015', owner: 'Jean', content: '« Le peintre est un catalyseur. Ce qu’il propose, c’est l’auberge espagnole, chacun y trouve ce qu’il y apporte. Je ne raconte rien, aucun message à faire passer. Je propose des jeux de couleurs imprégnés de l’endroit où je vis, qui font naître une émotion propre à chacun … ».')
+Text.create(title: 'Jean-Pierre ROSE, Février 2007', owner: 'Jean', content: 'Reprenons la vieille formule : « ce n’est qu’un œil mais quel œil ! »
+
+Une fois encore Jean Leccia va fouiller là où nous ne l’attendions pas.
+
+Cageots et poireaux, voilà qui, au temps des Académies, l’aurait envoyé fort bas, au seuil de la hiérarchie des genres et dans la nature morte même, au trente sixième dessous.
+
+Soyons francs, suivant l’actuel penchant pour les jardins et leurs séquelles (le potager, le marché aux légumes) nous ne manquons pas de pèlerins pour enfiler la bure franciscaine et louer la simplicité, le petit, le minuscule même. Avec la nostalgie comme boutique et les retraités – ancien régime – comme public. Honneur donc à Leccia, grand « éveilleur ». Honneur et reconnaissance, grâce à lui nous voyons mieux, sans jargon, sans artifice, mais dans une matière superbe, au mat sincère, aux frontières éclairantes.
+
+La vérité des bois assemblés, le glissement – du blanc au vert – des fibres, ou celui, vie essentielle, du signe à l’objet.
+
+À voir et à revoir, subtilité des apparences, affirmée par celui qui sait comme Lhote que : « construire ne consiste pas à édifier des digues pour retenir le plus possible de matière terrestre… mais consiste plutôt à dresser des pièges subtils pour l’esprit, quelque chose comme une échelle de Jacob pour permettre à nos anges intérieurs de mieux s’évader.')
+Text.create(title: 'Jean-Pierre ROSE, 1994', owner: 'Jean', content: 'De Leccia donc, plutôt dresser le catalogue des plaisirs à lui dérober :
+
+– Manger la couleur à même la nappe dans la densité du pigment non voilé, crissante infinité d’aspérités sensibles : terre, terre, terre.
+
+– Profiter pleinement de la justesse de son choix, de l’arrêt sur l’image, mais d’une lucidité exemplaire : voilant, tatonnant, laborantin du geste et de l’instrument, mattant en jeu sur l’équilibre d’un millimètre l’équilibre du monde.
+
+– Parfois la force reconnaissable “al natural” avec son évidence comme seul alibi.
+
+– Le silence : ni les bruits de la gestation, ni ceux de la presentation au temple, son manifeste et silence.
+
+– Voilà bien des mérites, assortis de la rare politesse d’une désinvolture feinte qui commande que l’on aborde son oeuvre comme lui-même en sort, sur la pointe des pieds.
+
+– Tendresse immense pour le geste suspendu, Leccia est plus que tout instaurateur ou restaurateur de l’imminente dignité de l’image.')
+Text.create(title: 'Claude Henri ROQUET, Juin 1977', owner: 'Jean', content: 'Ici, parler de la peinture en termes de plaisirs, distincts et confondus. Celui que tu goûtes à reconnaître un monde heureux, le tien : marmites et légumes dans la lumière terrestre, dans la clarté jardinière, paysanne ; tables assises pour l’amitié, modeste cérémonie de sièges, stores tendus entre chambre et ciel, nuage et lit, balcon voguant tranquille à travers le siècle. Et l’autre plaisir : celui que tu goûtes quand par magie l’ingrate matière se fait couleur, forme, présence – peinture. Leccia, dans la grâce d’une sorte de sourire, balance de la potiche peinte au pur jeu de peindre, du simple délice des formes à cette fenêtre ouverte sur la gloire modeste d’habiter ici.
+
+Mais chacun sait quand peinture du moins, le plaisir ne va jamais sans ascèse, ni l’évidence sans calculs. D’où ces ruses de la peinture, ces formes qui se glissent l’une sous l’autre, l’une au bord de disparaître sous l’autre, mais demeurant. D’où ces incertitudes savantes de la couleur, ces failles, ces fissures, où paraît, nu, le talus de la toile. L’amour de la peinture est aussi celui de la toile, souvent : bonheur des draps et de la nappe. Douceur des corps, et des fruits. Mais voici que nous retournons au plaisir.
+
+Le peintre, non plus que les autres hommes, n’aime qu’on le salue d’un nom qu’il ne porte pas. Je tairai donc l’héritage lumineux qui se reconnaît ici.')
+
+Text.create(title: 'Jean Édouard Robert', owner: 'Jean', content: 'Nous sommes étranges. Nous cherchons à reconstituer nos rêves et à effacer nos cauchemars. Nous sommes étranges à vouloir critiquer l’originalité et à nous satisfaire de la laideur.
+
+Nous sommes étrangers au monde de Jean Leccia et en cela, nous avons raison. Raisonneurs que nous sommes, il nous est difficile d’appréhender un monde où le rêve se touche, où le cauchemar ce colore.
+
+Jean Leccia a du génie. Il le sait. Nous aussi.
+
+Fi de nos raisons et de son talent, nous voilà face a son œuvre. Elle nous permet de connaître l’âme d’un ange en enfer.')
