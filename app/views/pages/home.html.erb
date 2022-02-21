@@ -1,11 +1,23 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+<style>
+  body {
+    background-color: #572EFA;
+  }
+</style>
   <div class="container text-end">
-    <h1>Laurence & Jean Leccia</h1>
-    <p>Laurence LECCIA & Jean LECCIA vous accueillent dans leurs ateliers à Pignan, près de Montpellier, dans l’Hérault.
-        Peintres reconnus depuis de nombreuses années, ils exposent en France et à l’étranger.
-        Découvrez leur biographie, leurs toiles, leurs expositions et toute la Presse.</p>
+    <div class="home d-flex align-items-center">
+      <video controls width="600">
+        <source src="Peinture.MOV" type="video/MOV">
+        <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+          Voici <a href="Peinture.MOV">un lien pour télécharger la vidéo</a>.</p>
+      </video>
+      <div class="presentation">
+        <h1>Laurence & Jean Leccia</h1>
+        <p>Laurence LECCIA & Jean LECCIA vous accueillent dans leurs ateliers à Pignan, près de Montpellier, dans l’Hérault.
+            Peintres reconnus depuis de nombreuses années, ils exposent en France et à l’étranger.
+            Découvrez leur biographie, leurs toiles, leurs expositions et toute la Presse.</p>
+      </div>
+    </div>
   </div>
-</div>
   <div class='container'>
     <%#= render 'shared/carrousel' %>
   </div>
