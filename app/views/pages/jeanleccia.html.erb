@@ -11,7 +11,7 @@
       <!-- Tab links -->
       <div class="tabs">
         <% @texts.each do |text| %>
-          <% if text.owner == 'Laurence' %>
+          <% if text.owner == 'Jean' %>
             <button class="tablinks" data-name='<%= text.title %>'><p data-title='<%= text.title %>'><%= text.title %></p></button>
           <% end %>
         <% end %>
@@ -20,7 +20,7 @@
       <!-- Tab content -->
       <div class="wrapper_tabcontent">
         <% @texts.each do |text| %>
-          <% if text.owner == 'Laurence' %>
+          <% if text.owner == 'Jean' %>
             <div id="<%= text.title %>" class="tabcontent">
               <h3>Textes</h3>
               <p><%= text.content %></p>
@@ -31,5 +31,5 @@
     </div>
   </section>
 
-  <%= render 'shared/cv' %>
+  <%= render 'shared/cv_Jean' %>
 </div>
