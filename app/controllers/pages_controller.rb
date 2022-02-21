@@ -15,4 +15,6 @@ class PagesController < ApplicationController
     @texts = Text.all
   end
 
+  def jean_lestoiles
+  end
 end
