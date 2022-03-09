@@ -11,14 +11,16 @@ footer {
 }
 
 .home {
-  position: relative;
+  justify-content: space-between;
+  // position: relative;
   margin-top: 86px;
   .img {
     margin-top: 86px;
-    position: absolute;
+    // position: absolute;
     img {
       width: 900px;
       margin-left: 12px;
+      margin-right: 50px;
     }
   }
 }
@@ -27,12 +29,17 @@ footer {
   display: flex;
   justify-content: end;
   margin-right: 12px;
-  color: white;
+  color: #572EFA;
   font-family: 'Cantarell', sans-serif;
   h1 {
     font-family: 'Cantarell', sans-serif;
   }
-  &.title {
-    z-index: 1;
-  }
+  // &.title {
+  //   z-index: 1;
+  // }
+}
+
+.home-text {
+  flex-direction: column;
+  margin: 20px;
 }
