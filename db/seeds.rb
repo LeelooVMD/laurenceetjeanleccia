@@ -12,15 +12,15 @@ puts 'Destroying texts'
 Text.destroy_all
 
 puts 'Adding users'
-user1
-user2
+User.create(email: "lauleccia@gmail.com", password: ENV["USER1_PASSWORD"], admin: true)
+User.create(email: "lilasviolettemarchand@gmail.com", password: ENV["USER2_PASSWORD"], admin: true)
 
 puts 'Adding articles'
 Article.create(title: 'Exposition Laurence LECCIA & Jean LECCIA', picture: 'expo-montpellier.jpeg', content: 'Laurence LECCIA & Jean LECCIA exposent à Montpellier les 2,3,9 et 10 juin 2018 de 11h à 13h & de 15h à 20h.
-8 Rue Foch – Entrée libre', user_id: 1)
-Article.create(title: 'Exposition Laurence LECCIA à Sète', picture: 'sete-invitation.png', content: 'Exposition du 16/10/2015 au 25/10/2015 au 16 Rue Gabriel Péri.', user_id: 1)
-Article.create(title: 'Exposition "Entre les chalets" à Gruissan', picture: 'gruissan-exposition.jpeg', content: 'Exposition de Laurence Leccia en 2016 à Gruissan Plage.', user_id: 1)
-Article.create(title: 'Exposition Laurence LECCIA à Montpellier', picture: 'montpellier-exposition.jpeg', content: 'Exposition en 1995 à Les Passagers de l\'art au 3 Rue Nozeran.', user_id: 1)
+8 Rue Foch – Entrée libre', user_id: 4)
+Article.create(title: 'Exposition Laurence LECCIA à Sète', picture: 'sete-invitation.png', content: 'Exposition du 16/10/2015 au 25/10/2015 au 16 Rue Gabriel Péri.', user_id: 4)
+Article.create(title: 'Exposition "Entre les chalets" à Gruissan', picture: 'gruissan-exposition.jpeg', content: 'Exposition de Laurence Leccia en 2016 à Gruissan Plage.', user_id: 4)
+Article.create(title: 'Exposition Laurence LECCIA à Montpellier', picture: 'montpellier-exposition.jpeg', content: 'Exposition en 1995 à Les Passagers de l\'art au 3 Rue Nozeran.', user_id: 4)
 
 puts 'Creating Laurence texts'
 Text.create(title: 'Laurence Leccia  – 2015', owner: 'Laurence', content: "A l’École d’Architecture, j’ai été formée à un dessin classique : la perspective, la théorie de la couleur, l’ombre et lumière, les proportions dorées. J’ai appris le trait d’équerre, un dessin au cordeau, une vision orthogonale.
