@@ -4,23 +4,21 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <div class="text-end">
-    <div class="home d-flex align-items-center">
-      <div class="home-text">
-        <%#= video_tag  %>
-        <%#= render 'shared/carrousel' %>
-        <div class="presentation title">
-          <h1>Laurence & Jean Leccia</h1>
-        </div>
-        <div class="presentation desc">
-          <p>Laurence LECCIA & Jean LECCIA vous accueillent dans leurs ateliers à Pignan, près de Montpellier, dans l’Hérault.
-              Peintres reconnus depuis de nombreuses années, ils exposent en France et à l’étranger.
-              <br>
-              Découvrez leur biographie, leurs toiles, leurs expositions et toute la Presse.</p>
+    <div class="home-page-content">
+      <%= image_tag 'Ateliers.jpg', height: 500 %>
+      <div class="text-end">
+        <div class="home d-flex align-items-center">
+          <div class="home-text">
+            <div class="presentation title">
+              <h1>Laurence & Jean Leccia</h1>
+            </div>
+            <div class="presentation desc">
+              <p>Laurence LECCIA & Jean LECCIA vous accueillent dans leurs ateliers à Pignan, près de Montpellier, dans l’Hérault.
+                  Peintres reconnus depuis de nombreuses années, ils exposent en France et à l’étranger.
+                  <br>
+                  Découvrez leur biographie, leurs toiles, leurs expositions et toute la Presse.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class='container'>
-    <%#= render 'shared/carrousel' %>
-  </div>
