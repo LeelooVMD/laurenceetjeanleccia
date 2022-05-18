@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_16_140644) do
+ActiveRecord::Schema.define(version: 2022_05_18_094303) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,27 @@ ActiveRecord::Schema.define(version: 2022_02_16_140644) do
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "user_id", null: false
     t.index ["user_id"], name: "index_articles_on_user_id"
+  end
+
+  create_table "collections", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "inbetweens", force: :cascade do |t|
+    t.bigint "pictures_id", null: false
+    t.bigint "collections_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["collections_id"], name: "index_inbetweens_on_collections_id"
+    t.index ["pictures_id"], name: "index_inbetweens_on_pictures_id"
+  end
+
+  create_table "pictures", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "texts", force: :cascade do |t|
@@ -47,4 +68,6 @@ ActiveRecord::Schema.define(version: 2022_02_16_140644) do
   end
 
   add_foreign_key "articles", "users"
+  add_foreign_key "inbetweens", "collections", column: "collections_id"
+  add_foreign_key "inbetweens", "pictures", column: "pictures_id"
 end
