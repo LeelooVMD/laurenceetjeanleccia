@@ -24,6 +24,6 @@ class CollectionsController < ApplicationController
   private
 
   def collection_params
-    params.require(:collection).permit(:name, :address, :rating)
+    params.require(:collection).permit(:name)
   end
 end
