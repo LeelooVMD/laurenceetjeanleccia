@@ -29,10 +29,18 @@ les_iris = Collection.create(name: 'Les Iris')
 puts 'Adding pictures'
 iris1 = Picture.create(name: 'Les Iris 1.jpg')
 iris2 = Picture.create(name: 'Les Iris 2.jpg')
+iris3 = Picture.create(name: 'Les Iris 3.jpg')
+iris4 = Picture.create(name: 'Les Iris 4.jpg')
+iris5 = Picture.create(name: 'Les Iris 5.jpg')
+iris6 = Picture.create(name: 'Les Iris 6.jpg')
 
 puts 'Adding Inbetween'
 Inbetween.create(pictures_id: iris1.id, collections_id: les_iris.id)
 Inbetween.create(pictures_id: iris2.id, collections_id: les_iris.id)
+Inbetween.create(pictures_id: iris3.id, collections_id: les_iris.id)
+Inbetween.create(pictures_id: iris4.id, collections_id: les_iris.id)
+Inbetween.create(pictures_id: iris5.id, collections_id: les_iris.id)
+Inbetween.create(pictures_id: iris6.id, collections_id: les_iris.id)
 
 puts 'Adding users'
 user1 = User.create(email: "lauleccia@gmail.com", password: ENV["USER1_PASSWORD"], admin: true)
