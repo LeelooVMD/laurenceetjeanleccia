@@ -1,4 +1,6 @@
 class CollectionsController < ApplicationController
+  before_action :set_pictures, only: [:show]
+
   def index
     @collections = Collection.all
   end
@@ -14,6 +16,7 @@ class CollectionsController < ApplicationController
 
   def create
     @collection = Collection.new(collection_params)
+    @collection.user = current_user
     if @collection.save
       redirect_to collection_path(@collection)
     else
@@ -25,5 +28,9 @@ class CollectionsController < ApplicationController
 
   def collection_params
     params.require(:collection).permit(:name)
+  end
+
+  def set_collections
+    @collection = Collection.find(params[:id])
   end
 end

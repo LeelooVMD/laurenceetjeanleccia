@@ -6,7 +6,6 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    authorize @article
   end
 
   def new
@@ -14,7 +13,6 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    authorize @article
     @article = Article.new(article_params)
     @article.user = current_user
 
@@ -29,7 +27,6 @@ class ArticlesController < ApplicationController
   end
 
   def update
-    authorize @article
     if @article.update(article_params)
       redirect_to article_path(@article)
     else
@@ -38,7 +35,6 @@ class ArticlesController < ApplicationController
   end
 
   def destroy
-    authorize @article
     @article.destroy
     redirect_to articles_path
   end
