@@ -14,6 +14,26 @@ Text.destroy_all
 puts 'Destroying users'
 User.destroy_all
 
+puts 'Destroying collections'
+Collection.destroy_all
+
+puts 'Destroying pictures'
+Picture.destroy_all
+
+puts 'Destroying inbetween'
+Inbetween.destroy_all
+
+puts 'Adding collections'
+les_iris = Collection.create(name: 'Les Iris')
+
+puts 'Adding pictures'
+iris1 = Picture.create(name: 'Les Iris 1.jpg')
+iris2 = Picture.create(name: 'Les Iris 2.jpg')
+
+puts 'Adding Inbetween'
+Inbetween.create(pictures_id: iris1.id, collections_id: les_iris.id)
+Inbetween.create(pictures_id: iris2.id, collections_id: les_iris.id)
+
 puts 'Adding users'
 user1 = User.create(email: "lauleccia@gmail.com", password: ENV["USER1_PASSWORD"], admin: true)
 user2 = User.create(email: "lilasviolettemarchand@gmail.com", password: ENV["USER2_PASSWORD"], admin: true)
