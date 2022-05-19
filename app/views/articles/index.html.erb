@@ -15,13 +15,3 @@
     <% end %>
   </div>
 </div>
-
-    <%# if policy(@articles).create? %>
-      <%#=link_to 'new', new_article_path %>
-    <%# end %>
-    <%# if policy(@articles).update? %>
-      <%#= link_to 'Edit', edit_article_path %>
-    <%# end %>
-    <%# if policy(@articles).delete? %>
-      <%#= link_to 'delete', article_path, method: :delete, data: { confirm: 'Es-tu sure?' } %>
-    <%# end %>
